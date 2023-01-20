@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+      
+  body {
+    background-color: #09090A;
+    color: white;  
+  
+    height: 100vh;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; somente para visualizar a caixa header */
+    padding: 48px;
+
+    position: fixed;
+    background-color: #09090A;
+    /*border: 1px solid red;  - usamos isto para ver a cx e poder ajustar a cx form*/
+    width: 100vw;
+}
+
+  
+  button {
+    padding: 16px 24px;
+    border: 1px solid #8b5cf6;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+
+    display: flex;
+    align-items: center; /*só funciona com os itens dentro do elemento se for display flex*/
+    gap: 12px; /* espaço entre os elementos - só usando o display flex*/
+
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;    
+  }
+
+  #form-habits {
+    display: flex;
+    padding: 182px 48px 48px; /* 182px de padding pq ele ficou todo pra cima 
+    e 182px é a altura height do header fazendo esta caixa ficar exatamente abaixo do header*/
+    width: fit-content; /* para o conteúdo ficar ajustado lateralmente na cx*/ 
+  }
+
+  .habits {
+    margin-top: 57px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+
+  }
+
+  .habit {
+   /* border: 1px solid red; - usado para ir vendo o comportamento da caixa*/
+
+    width: 64px;
+    height: 64px;
+    font-size: 32px; /* é o tamanho das imagenzinhas habits*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .days {
+    display: flex;
+    margin-left: 32px;
+    gap: 48px;
+  }
+  .day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .day div {
+    margin-bottom: 8px;
+
+    font-family: 'Roboto Mono';    
+    font-size: 20px;    
+    line-height: 125%;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #A1A1AA;    
+  }
+
+  input {
+    appearance: none; /* usamos o appearance none para poder usar algumas propriedades do input, como
+                         por exemplo o border-radius, que não funcionariam sem o appearance */ 
+    -webkit-appearance: none;
+
+    width: 64px;
+    height: 64px;
+
+    border: 2px solid #27272a;
+    border-radius: 8px;
+    background: #18181B;
+  }
+  /* pseud-selector*/
+  input:checked {
+    background: #8B5CF6;
+    border: 2 px solid #A78BFA;
+  }
+  /* usaremos o @media para que a informação "Registrar meu dia" 
+     suma de 0 a 570px, para uso em celulares, qdo a tela for maior que 570px 
+     vai aparecer a frase, isso se chama responssividade em CSS*/
+  @media (max-width: 570px) {
+    button div {
+      display: none;
+    }
+  }
+
+
+
+
