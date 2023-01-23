@@ -16,7 +16,7 @@ para ensino de tecnologias Web.
 <br>
 
 <p align="center">
-    <img alt="Projeto Habits" scr="./preview.jpg" width="100%">
+    <img alt="Projeto Habits" scr="./preview.jpg">
 
 <br>
 
