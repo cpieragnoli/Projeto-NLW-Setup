@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Setup Habits Tracker é um app para ajudar rastrear hábitos.
 
-- [Acesse o projeto finalizado, on line]
+- [Acesse o projeto on line]( https://cpieragnoli.github.io/Projeto-NLW-Setup/)
 
 
 ## Layout 
